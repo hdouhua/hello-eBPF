@@ -1,0 +1,10 @@
+users:
+  - default
+  - name: ubuntu
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh_authorized_keys:
+    - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIChifnDQg2x8lTtI+adg107+oWPIxBz01GLAAtFbnP4K ubuntu
+    # - $( cat ~/.ssh/multipass-key.pub )
+
+output:
+  all: ">> /var/log/cloud-init-output.log"
